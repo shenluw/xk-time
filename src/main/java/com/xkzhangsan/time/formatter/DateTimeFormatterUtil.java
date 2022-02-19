@@ -11,6 +11,7 @@ import com.xkzhangsan.time.enums.RegexEnum;
 import com.xkzhangsan.time.utils.ArrayUtil;
 import com.xkzhangsan.time.utils.CollectionUtil;
 import com.xkzhangsan.time.utils.StringUtil;
+import top.shenluw.tools.NullSafe;
 
 import java.time.DateTimeException;
 import java.time.Instant;
@@ -83,6 +84,7 @@ import java.util.regex.Pattern;
 * @author xkzhangsan
 *
  */
+@NullSafe
 public class DateTimeFormatterUtil {
 	
 	private DateTimeFormatterUtil(){

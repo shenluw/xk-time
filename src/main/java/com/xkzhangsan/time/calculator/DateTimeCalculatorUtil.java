@@ -45,6 +45,7 @@ import com.xkzhangsan.time.formatter.DateTimeFormatterUtil;
 import com.xkzhangsan.time.utils.ArrayUtil;
 import com.xkzhangsan.time.utils.CollectionUtil;
 import com.xkzhangsan.time.utils.StringUtil;
+import top.shenluw.tools.NullSafe;
 
 /**
  * 日期计算工具类<br>
@@ -84,8 +85,9 @@ import com.xkzhangsan.time.utils.StringUtil;
 * @author xkzhangsan
 *
  */
+@NullSafe
 public class DateTimeCalculatorUtil {
-	
+
 	private DateTimeCalculatorUtil(){
 	}
 	

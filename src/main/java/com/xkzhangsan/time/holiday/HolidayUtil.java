@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.Map;
 
 import com.xkzhangsan.time.LunarDate;
+import top.shenluw.tools.NullSafe;
 
 /**
  * 节日处理工具<br>
@@ -16,6 +17,7 @@ import com.xkzhangsan.time.LunarDate;
  * 农历相关，仅支持公历1900-2100年的计算，使用{@link LunarDate}<br>
 * @author xkzhangsan
  */
+@NullSafe
 public class HolidayUtil {
 	
 	private HolidayUtil(){

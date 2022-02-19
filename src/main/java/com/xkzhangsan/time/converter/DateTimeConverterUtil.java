@@ -19,6 +19,7 @@ import java.util.concurrent.TimeUnit;
 
 import com.xkzhangsan.time.LunarDate;
 import com.xkzhangsan.time.calculator.DateTimeCalculatorUtil;
+import top.shenluw.tools.NullSafe;
 
 /**
  * 日期转换工具类<br>
@@ -34,6 +35,7 @@ import com.xkzhangsan.time.calculator.DateTimeCalculatorUtil;
 * @author xkzhangsan
 *
  */
+@NullSafe
 public class DateTimeConverterUtil {
 	
 	private DateTimeConverterUtil(){

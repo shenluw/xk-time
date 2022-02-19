@@ -128,7 +128,10 @@ public class NullSafeProcessor extends AbstractProcessor {
                 builder.addAnnotation(AnnotationSpec.get(annotationMirror));
             }
         }
-        builder.addJavadoc(elements.getDocComment(element));
+        String docComment = elements.getDocComment(element);
+        if (docComment != null) {
+            builder.addJavadoc(docComment);
+        }
         builder.addCode(generateExecuteBody(originClass, element));
         return builder.build();
     }
