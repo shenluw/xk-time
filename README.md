@@ -79,7 +79,10 @@ xk-time工具包，将上面功能按照时间转换，时间计算，时间格�
    
  注意，ZonedDateTime相关的转换，尤其是其他时间转ZonedDateTime，要注意时间和对应时区一致。  
   
-详细使用可以查看相关测试代码： DateTimeConverterUtilTest.  
+详细使用可以查看相关测试代码： DateTimeConverterUtilTest.
+
+### 3.1.1 日期转换工具类 NullSafeDateTimeConverterUtil
+包装NullSafeDateTimeConverterUtil，参数为null返回值也为null
 
 ### 3.2 日期计算工具类  DateTimeCalculatorUtil 
 包括：  
@@ -149,6 +152,9 @@ xk-time工具包，将上面功能按照时间转换，时间计算，时间格�
       
 详细使用可以查看相关测试代码： DateTimeCalculatorUtilTest.  
 
+### 3.2.1 日期转换工具类 NullSafeDateTimeCalculatorUtil
+包装NullSafeDateTimeCalculatorUtil，参数为null返回值也为null
+
 ### 3.3 日期格式化和解析工具类  DateTimeFormatterUtil 
 包含常用日期格式如：  
  yyyy-MM-dd  
@@ -202,6 +208,10 @@ parseToDate(String text, DateTimeFormatter formatter) 根据 formatter解析为 
   
 详细使用可以查看相关测试代码： DateTimeFormatterUtilTest.  
 
+### 3.3.1 日期转换工具类 NullSafeDateTimeFormatterUtil
+包装NullSafeDateTimeFormatterUtil，参数为null返回值也为null
+
+
 ### 3.4 日历工具类  CalendarUtil 
 包括：  
 （1）生成指定时间的日历（包含年、月和日层级关系的日历）方法，generateCalendar* 比如generateCalendar(int year, int month) 生成指定年月的日历。   
@@ -228,7 +238,10 @@ parseToDate(String text, DateTimeFormatter formatter) 根据 formatter解析为 
 注意： 农历和二十四节气使用农历日期类 LunarDate，仅支持公历1900-2100年的计算。  
 
 详细使用可以查看相关测试代码。      
-    
+
+### 3.6.1 日期转换工具类 NullSafeHolidayUtil
+包装NullSafeHolidayUtil，参数为null返回值也为null
+
 ### 3.7 Cron表达式工具类 CronExpressionUtil    
   
 cron表达式从左到右（用空格隔开）：秒（0-59） 分（0-59） 小时（0-23） 日期（1-31） 月份（1-12的整数或者 JAN-DEC） 星期（1-7的整数或者 SUN-SAT （1=SUN）） 年份（可选，1970-2099）  
