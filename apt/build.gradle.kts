@@ -14,6 +14,6 @@ dependencies {
 
 
 group = "com.shenluw.tools"
-version = "3.2.3"
+version = "3.2.3.1"
 description = "xk-time apt"
 java.sourceCompatibility = JavaVersion.VERSION_1_8
