@@ -7,12 +7,13 @@ repositories {
     mavenCentral()
 }
 
+
 dependencies {
-    testImplementation("junit:junit:4.13.2")
-    annotationProcessor(project(":apt"))
+    implementation("com.squareup:javapoet:1.13.0")
 }
+
 
 group = "com.shenluw.tools"
 version = "3.2.3"
-description = "xk-time"
+description = "xk-time apt"
 java.sourceCompatibility = JavaVersion.VERSION_1_8
